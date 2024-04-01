@@ -28,3 +28,42 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* footer */
+.footer {
+  border-top:#04bdcb 1px solid  ;
+  height: 290px;
+  width: 100%;
+  background-image: linear-gradient(to left,#000000,#040b11 ,rgb(4, 13, 21) , #041a2b); /* Modify colors as needed */
+  color: #fff; /* Change text color if necessary */
+}
+
+.footer li
+{
+  list-style: none;
+}
+.footer li a
+{
+
+  color: #bcbcbcd5;
+  transition: all 0.2s ease-in-out;
+}
+.footer li a:hover
+{
+  color: #01a8b4;
+}
+.footer svg
+{
+  height: 30px;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.footer svg:hover
+{
+  transform: scale(1.2);
+}
+
+.links-list
+{
+  margin-right: 100px;
+}

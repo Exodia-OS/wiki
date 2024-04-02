@@ -8,9 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Exodia OS wiki',
+  title: 'Exodia wiki 🇵🇸 Free Palestine',
   tagline: '🇵🇸 Free Palestine',
-  favicon: 'img/favicon.ico',
+  favicon: 'Logos/with-bg/exodia-cyan-black-bg.png',
 
   // Set the production url of your site here
   url: 'https://exodia-os.github.io',
@@ -66,10 +66,10 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Exodia OS',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'Logos/with-bg/exodia-cyan-black-bg.png',
         },
         items: [
           {

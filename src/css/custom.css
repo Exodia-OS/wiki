@@ -14,66 +14,74 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #041A2B;
+  --ifm-color-primary-dark: #244E6D;
+  --ifm-color-primary-darker: #176DA7;
+  --ifm-color-primary-darkest: #167CC0;
+  --ifm-color-primary-light: #2598DD;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #9FCEE6;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   background: #010D16;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #041A2B;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-dark: #244E6D;
+  --ifm-color-primary-darker: #176DA7;
+  --ifm-color-primary-darkest: #167CC0;
+  --ifm-color-primary-light: #2598DD;
   --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary-lightest: #9FCEE6;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   background: #010D16;
+}
+
+/* Banner Image */
+.banner__img {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #04bdcb;
+  border-radius: 24px;
+}
+
+/* Hero Text */
+.hero__title
+{
+  font-family: 'Quicksand', sans-serif;
+  background-image: linear-gradient(to right, #0BCECE, #0571c3); /* Adjust colors as needed */
+  -webkit-background-clip: text; /* Clip text to the background's shape */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+}
+.hero__subtitle {
+  font-family: 'Quicksand', sans-serif;
+  color: #9D9E9F;
+}
+
+/* Hero Buttons */
+.button {
+  background: #010D16;
+  border-radius: 50px;
+  color: #04D3E4;
+
+}
+.button:hover {
+  background: #04D3E4;
+}
+.button--dl {
+  background: #04D3E4;
+  color: #010D16;
+}
+.button--dl:hover {
+  background: #010D16;
+  color: #04D3E4;
 }
 
 /* footer */
 .footer {
   border-top:#04bdcb 1px solid  ;
-  /*height: 290px;*/
-  /*width: 100%;*/
   background-image: linear-gradient(to left,#000000,#040b11 ,rgb(4, 13, 21) , #041a2b); /* Modify colors as needed */
   color: #01a8b4;
-}
-
-.footer li
-{
-  list-style: none;
-}
-.footer li a
-{
-
-  color: #9D9E9F;
-  transition: all 0.2s ease-in-out;
-}
-.footer li a:hover
-{
-  color: #01a8b4;
-}
-.footer svg
-{
-  height: 30px;
-  border-radius: 100%;
-  transition: all 0.2s ease-in-out;
-}
-.footer svg:hover
-{
-  transform: scale(1.2);
-}
-
-.links-list
-{
-  margin-right: 100px;
 }

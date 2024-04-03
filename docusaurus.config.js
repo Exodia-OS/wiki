@@ -66,25 +66,62 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Exodia OS',
+        style: 'dark',
+        // title: '',
         logo: {
           alt: 'My Site Logo',
           src: 'Logos/with-bg/exodia-cyan-black-bg.png',
+          href: '/',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
+            className: 'navbar__text',
+
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Tutorials', position: 'left', className: 'navbar__text'},
+          { to: '/news', label: 'News', position: 'left', className: 'navbar__text'},
+
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/Exodia-OS/wiki',
+            // label: 'GitHub',
+            className: 'header-github-link',
             position: 'right',
           },
+
         ],
+      },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'SJSCFND0L4',
+
+        // Public API key: it is safe to commit it
+        apiKey: '53c7014fae1952c4975c42631c12c348',
+
+        indexName: 'exodia_wiki',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/',
+        },
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+
+        //... other Algolia params
       },
       footer: {
         style: 'dark',
@@ -130,7 +167,6 @@ const config = {
         //     ],
         //   },
         // ],
-
         copyright: `Exodia OS is licensed under the GPl-3 License © ${new Date().getFullYear()} 2024 Exodia OS Development & Cyb3rTh1eveZ Team`,
       },
       prism: {

@@ -69,8 +69,8 @@ function Feature({ imgSrc, title, description }) {
                 <img src={imgSrc} className={styles.featureImg} alt={title} width="20%" /> {/* Adjust the width value as needed */}
             </div>
             <div className="text--center padding-horiz--md">
-                <Heading as="h3">{title}</Heading>
-                <div>{description}</div>
+                <Heading className={"HomepageFeatures__title"} as="h3">{title}</Heading>
+                <div className={"HomepageFeatures__description"}>{description}</div>
             </div>
         </div>
     );

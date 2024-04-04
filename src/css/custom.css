@@ -6,9 +6,23 @@
 
 /* custom.css */
 
+/* Fonts */
+@font-face {
+  font-family: Predator;
+  src: url(../../Fonts/Squares-Regular.otf);
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Predator";
+  font-weight: 400;
+  font-style: normal;
+}
+
 .navbar {
   border-bottom: #04bdcb 1px solid;
-  background-image: linear-gradient(to left,#000000,#040b11 ,rgb(4, 13, 21) , #041a2b); /* Modify colors as needed */
+  background-image: linear-gradient(to right, #040e13, #081723, rgb(12, 35, 56), #072e4d); /* Modify colors as needed */
   color: #04bdcb; /* Change text color if necessary */
   box-shadow: 0 2px 5px 5px #01a8b4;
 }
@@ -28,10 +42,9 @@
   background-color:  #04bdcb;
 }
 
-
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #041A2B;
+  --ifm-color-primary: #01a8b4;
   --ifm-color-primary-dark: #244E6D;
   --ifm-color-primary-darker: #176DA7;
   --ifm-color-primary-darkest: #167CC0;
@@ -44,7 +57,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #041A2B;
+  --ifm-color-primary: #01a8b4;
   --ifm-color-primary-dark: #244E6D;
   --ifm-color-primary-darker: #176DA7;
   --ifm-color-primary-darkest: #167CC0;
@@ -66,15 +79,17 @@
 }
 
 /* Hero Text */
+.hero--background{
+  background: #041A2B;
+}
 .hero__title
 {
-  font-family: 'Quicksand', sans-serif;
   background-image: linear-gradient(to right, #0BCECE, #0571c3, #BA0887 , #9A086C ); /* Adjust colors as needed */
   -webkit-background-clip: text; /* Clip text to the background's shape */
   -webkit-text-fill-color: transparent; /* Make the text transparent */
+  font-family: Predator;
 }
 .hero__subtitle {
-  font-family: 'Quicksand', sans-serif;
   color: #04D3E4;
 }
 
@@ -98,11 +113,18 @@
 }
 
 /* HomepageFeatures */
+.HomepageFeatures{
+
+  background: #010D16;
+
+}
+
 .HomepageFeatures__title{
 
   background-image: linear-gradient(to right, #0BCECE, #0571c3, #BA0887 , #9A086C ); /* Adjust colors as needed */
   -webkit-background-clip: text; /* Clip text to the background's shape */
   -webkit-text-fill-color: transparent; /* Make the text transparent */
+  font-family: Predator;
 
 }
 
@@ -111,10 +133,27 @@
   color: #026c75;
 
 }
+
+.stay_tuned{
+
+  background: #031f34;
+  border-radius: 10px;
+
+}
+
+.stay_tuned-text{
+
+  background-image: linear-gradient(to right, #0BCECE, #0571c3, #BA0887 , #9A086C ); /* Adjust colors as needed */
+  -webkit-background-clip: text; /* Clip text to the background's shape */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  font-family: Predator;
+
+}
+
 /* footer */
 .footer {
   border-top:#04bdcb 1px solid  ;
-  background-image: linear-gradient(to left,#000000,#040b11 ,rgb(4, 13, 21) , #041a2b); /* Modify colors as needed */
+  background-image: linear-gradient(to left, #040e13, #081723, rgb(12, 35, 56), #072e4d); /* Modify colors as needed */
   color: #01a8b4;
   box-shadow: 0 2px 5px 5px #01a8b4;
 

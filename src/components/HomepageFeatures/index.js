@@ -42,9 +42,13 @@ const FeatureList = [
         imgSrc: exodiaBlue,
         description: (
             <>
-                ISO image for Exodia OS Dark edition (security-focused), this edition was built for the dark web to preserve privacy and anonymity.<br/>
-                It's coming soon<br/>
-                Stay Tuned!
+                ISO image for Exodia OS Dark edition (security-focused), this edition was built for the dark web to
+                preserve privacy and anonymity.<br/>
+                <div className={'stay_tuned'}>
+                    <div className={'stay_tuned-text'}>
+                        It's coming soon, Stay Tuned for More!
+                    </div>
+                </div>
             </>
         ),
     },
@@ -55,14 +59,17 @@ const FeatureList = [
             <>
                 A flavor edition for the ARM family: An automated script that installs Exodia OS settings, repositories,
                 etc., over an Arch ARM installation.<br/>
-                It's coming soon<br/>
-                Stay Tuned!
+                <div className={'stay_tuned'}>
+                    <div className={'stay_tuned-text'}>
+                        It's coming soon, Stay Tuned for More!
+                    </div>
+                </div>
             </>
         ),
     },
 ];
 
-function Feature({ imgSrc, title, description }) {
+function Feature({imgSrc, title, description}) {
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center">
@@ -76,7 +83,7 @@ function Feature({ imgSrc, title, description }) {
     );
 }
 
-
+HomepageFeatures
 export default function HomepageFeatures() {
     return (
         <section className={styles.features}>

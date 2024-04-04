@@ -34,6 +34,21 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'news',
+        routeBasePath: 'news',
+        path: './news',
+        showReadingTime: false,
+        blogTitle: 'News',
+        blogSidebarTitle: 'Latest News',
+        blogSidebarCount: 15,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -58,6 +73,7 @@ const config = {
         },
       }),
     ],
+
   ],
 
   themeConfig:
@@ -95,6 +111,9 @@ const config = {
         ],
       },
       algolia: {
+
+        className: 'algolia-search',
+
         // The application ID provided by Algolia
         appId: 'SJSCFND0L4',
 

@@ -15,10 +15,16 @@ you can easily create your themes with the same steps for all WMs
 - Copy an existing theme and rename it. (eg:`Etherium`)
 - Edit `theme.conf`
   - ![](/img/tips/CreateCustomTheme/1.png)
-- Generate `colorScheme` for the theme using `python-pywal`
+- Generate Color Scheme for the theme using `python-pywal`
   - ```bash
     wal -i /usr/share/backgrounds/Etherium.jpg
     ```
+  - ![](/img/tips/CreateCustomTheme/GeneratedColorScheme.png)
+  - add the Color Scheme to `colorScheme`
+  - ![](/img/tips/CreateCustomTheme/AddColorScheme.png)
+  - :::note[DWM]
+    you can use `colorPicker` to capture colors, press on <kbd>mod + p</kbd> to use it
+    :::
 - Then Edit `polybar` config
 - Then take a screenshot and save it in the theme directory with name `preview.png`
   - ![](/img/tips/CreateCustomTheme/2.png)

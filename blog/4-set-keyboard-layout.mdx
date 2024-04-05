@@ -1,0 +1,43 @@
+---
+slug: 4-set-keyboard-layout
+title: Set keyboard Layout
+authors: [Ozil]
+tags: [tips]
+---
+
+- edit `~/.config/bspwm/exodia.conf`
+- ```bash
+    nvim ~/.config/bspwm/exodia.conf
+    ```
+- set `keyboard-layouts` to your layout(e.g `us,ara`)
+- ![](/img/tips/keyboardLayouts/0.png)
+
+:::tip[Layouts]
+
+- List Layouts `localectl list-x11-keymap-layouts`
+- all [Layouts](https://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements)
+
+:::
+
+<details>
+    <summary><h3> for <code>v2022.12</code> Release or less </h3></summary>
+
+![](/img/tips/keyboardLayouts/en.png) ![](/img/tips/keyboardLayouts/ar.png)
+
+- edit `bspwmrc`
+
+- ```bash
+        nvim ~/.config/bspwm/bspwmrc
+    ```
+
+- add
+
+- ```bash
+    # ----- set keyboard Layout ----- #
+    setxkbmap -layout us,ar  # add 'us,ar' #
+    setxkbmap -option 'grp:alt_shift_toggle'  # Alt+Shift -> switch layout #
+  ```
+
+- replace `us`, `ar` to your language
+
+</details>

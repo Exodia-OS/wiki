@@ -1,0 +1,24 @@
+---
+slug: 1-PGP-signature
+title: PGP signature Error
+authors: [Ozil]
+tags: [tips]
+---
+
+If you get `invalid or corrupted package (PGP signature) error`, Open up The Terminal and  do :
+
+- ```bash
+    sudo pacman -S archlinux-keyring
+    ```
+- ```bash
+    sudo pacman-key --init
+    ```
+- ```bash
+    sudo pacman-key --populate
+    ```
+
+Not resolved yet? Ok, try this
+
+```bash
+yay -Syy archlinux-keyring
+```

@@ -1,0 +1,28 @@
+---
+slug: 7-create-custom-theme
+title: Create Your Own Theme
+authors: [Ozil]
+tags: [tips, WMs, bspwm, i3wm]
+---
+
+:::note[DWM]
+currently `DWM` comes with one theme
+:::
+
+you can easily create your themes with the same steps for all WMs
+
+- Go to `~/.config/bspwm/themes/`
+- Copy an existing theme and rename it. (eg:`Etherium`)
+- Edit `theme.conf`
+  - ![](/img/tips/CreateCustomTheme/1.png)
+- Generate `colorScheme` for the theme using `python-pywal`
+  - ```bash
+    wal -i /usr/share/backgrounds/Etherium.jpg
+    ```
+- Then Edit `polybar` config
+- Then take a screenshot and save it in the theme directory with name `preview.png`
+  - ![](/img/tips/CreateCustomTheme/2.png)
+
+### Finally!
+
+![](/img/tips/CreateCustomTheme/preview.png)

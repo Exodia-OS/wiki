@@ -1,0 +1,153 @@
+---
+slug: 2-polybar-modules
+title: Polybar Modules
+authors: [Ozil]
+tags: [tips]
+---
+<!-- weather -->
+
+<details>
+
+    <summary> <h4> <code>weather</code> Modules </h4> </summary>
+
+    - create an account on [OpenWeatherMap](https://openweathermap.org/)
+    - go to [API](https://home.openweathermap.org/api_keys) page
+    - generate an API Key
+    - ![](/img/tips/weather/0.png)
+    - copy the API Key
+    - ![](/img/tips/weather/1.png)
+    - edit `~/.config/bspwm/exodia.conf`
+    - set `weather-API`
+    - ![](/img/tips/weather/2.png)
+    - go to [OpenWeatherMap](https://openweathermap.org/)
+    - search for your city
+    - ![](/img/tips/weather/3.png)
+    - press on the result
+    - ![](/img/tips/weather/4.png)
+    - copy city ID
+    - ![](/img/tips/weather/5.png)
+    - edit `~/.config/bspwm/exodia.conf`
+    - set `weather-city-ID`
+    - ![](/img/tips/weather/6.png)
+    - save file and restart polybar (open terminal `bspbar`)
+
+</details>
+
+<!-- github-notifications -->
+
+<details>
+
+    <summary> <h4> <code>github-notifications</code> Modules </h4> </summary>
+
+    ![](/img/tips/github/github.png)
+
+    - generate new [Personal access tokens](https://github.com/settings/tokens)
+
+    ![](/img/tips/github/1.png)
+
+    - select the classic
+
+    ![](/img/tips/github/2.png)
+
+    - in `Note` set the name as you like (e.g`Polybar-Notification`), in `Expiration` set to `No expiration`
+
+    ![](/img/tips/github/3.png)
+
+    - select notifications
+
+    ![](/img/tips/github/4.png)
+
+    - copy access tokens
+
+    ![](/img/tips/github/5.png)
+
+    ```bash
+    nvim ~/.config/bspwm/exodia.conf
+    ```
+    - set `github-username` to `your username`
+
+    - set `github-access-token` to `your accessTokens`
+
+    - ![](/img/tips/github/6.png)
+
+</details>
+
+<!-- ------------------------ END Polybar Modules | START OF Multi Bars ------------------------ -->
+
+### Launching Multi Bars (polybar)
+
+<!-- setup polybar for dual monitor -->
+<details>
+
+    <summary> <h4> setup polybar for dual monitor </h4> </summary>
+
+    - edit `~/.config/bspwm/exodia.conf`
+    - set `multi-bar-monitors` to `true`
+    - ![](/img/tips/multiBars/0.png)
+    - save file and restart `bspwm` (<kbd>ctrl + shift + r</kbd>)
+    ___
+
+    ### For older version
+
+    I'm gonna apply the steps on Tokyo Theme (same on all themes).
+
+    - run `xrandr | grep " connected " | awk '{ print$1 }'` to connected monitors
+
+    ![](/img/tips/multiBars/1.png)
+
+    - edit `nvim ~/.config/bspwm/polybar/tokyo/config`
+
+    - create new bar `[bar/sec]`
+
+    - copy everything under `[bar/main]` (from line No. 41 to line No. 79) as shown down.
+
+    ![](/img/tips/multiBars/2.png)
+
+    - and set  `monitor` to the second monitor (e.g `HDMI-1-0` as it's my second monitor) as shown down.
+
+    ![](/img/tips/multiBars/3.png)
+
+    - now add the models (e.g as shown down)
+
+    ```
+    modules-left   = xdomenu space LD bspwm RD space LD updates-pacman notification-github netDownSpeed RD space xkeyboard space themes
+    modules-center = LD mpd RD
+    modules-right  = volume space battery network LD cpu cpuTemp date LD2 info-cava RD2 bna RD space sysmenu
+    ```
+
+    - now we finished the second bar config
+
+    ![](/img/tips/multiBars/4.png)
+
+    - to Launch the bar
+
+    ```bash
+    polybar -q sec -c  ~/.config/bspwm/polybar/tokyo/config &
+    ```
+
+    - to Launch the bar always
+
+    - edit `nvim ~/.config/bspwm/bin/bspbar`
+
+    ![](/img/tips/multiBars/5.png)
+
+    - Add these lines above `else`(between line No. 100 and 102)
+
+    ```bash
+    elif [[ "$Bar" == "tokyo" ]]; then
+
+    pkill polybar
+    polybar -q main -c "$DIR"/"$Bar"/config &
+    polybar -q sec -c "$DIR"/"$Bar"/config &
+
+    ```
+
+    - as shown down
+
+    ![](/img/tips/multiBars/6.png)
+
+    - finally
+
+    ![](/img/tips/multiBars/7.png)
+
+</details>

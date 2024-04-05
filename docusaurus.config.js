@@ -98,7 +98,7 @@ const config = {
             className: 'navbar__text',
 
           },
-          { to: '/blog', label: 'Tutorials', position: 'left', className: 'navbar__text'},
+          { to: '/blog', label: 'Tips', position: 'left', className: 'navbar__text'},
           { to: '/news', label: 'News', position: 'left', className: 'navbar__text'},
 
           {

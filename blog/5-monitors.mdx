@@ -1,0 +1,51 @@
+---
+slug: 5-monitors
+title: setup custom monitors config
+authors: [Ozil]
+tags: [tips]
+---
+
+:::tip[bspmonitors]
+
+- the `bspmonitors` script will auto-configure all connected monitors
+- if you want to add a custom monitors config, add the path to `monitors-layouts` in the `~/.config/bspwm/exodia.conf`
+
+:::
+
+- use `arandr` to configure monitors
+
+- ![](/img/tips/monitors/1.png)
+
+- save your configure
+
+- ![](/img/tips/monitors/2.png)
+
+- add configure file path to the `monitors-layouts` in the `~/.config/bspwm/exodia.conf`
+
+- ![](/img/tips/monitors/monitors-layout.png)
+
+<details>
+    <summary><h3> for <code>v2022.12</code> Release or less </h3></summary>
+
+- use `arandr` to configure monitors
+
+- ![](/img/tips/monitors/1.png)
+
+- save your configure
+
+- ![](/img/tips/monitors/2.png)
+
+- copy  the script from `~/.screenlayout/monitors.sh` to `~/.config/bspwm/bin/`
+
+- `cp ~/.screenlayout/monitors.sh ~/.config/bspwm/bin/`
+- `mv ~/.config/bspwm/bin/monitors.sh ~/.config/bspwm/bin/monitors`
+
+- then call this script from `bspwmrc` file
+
+- edit `~/.config/bspwm/bspwmrc`
+- `nvim ~/.config/bspwm/bspwmrc`
+- ![](/img/tips/monitors/3.png)
+- save.
+- Restart BSPWM <kbd>ctrl + shift + r</kbd>
+
+</details>

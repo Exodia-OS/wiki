@@ -1,0 +1,80 @@
+---
+id: dwm
+title: dwm Keybinding
+---
+<h1 align="center"> DWM Keybinding ⌨️  </h1>
+
+### install 
+
+```bash
+install exodia-dwm
+
+# OR
+
+install exodia-dwm-predator # For Predator Edition
+```
+mod -> super (window key)
+
+| Keys | Action |
+| --- | --- |
+|<kbd>mod+Return</kbd> | Opens a terminal (st) |
+|<kbd>mod+Shift+Return</kbd> | Opens a terminal in floating mode |
+|<kbd>mod+Control+Return</kbd>| Open a terminal (alacritty)
+|<kbd>mod+Shift+f</kbd> | Opens file manager (thunar) |
+|<kbd>mod+Shift+e</kbd> | Opens a text editor GUI (geany) |
+|<kbd>mod+Shift+w</kbd> | Opens a web browser (firefox) |
+|<kbd>alt+F1</kbd> | Opens app launcher |
+|<kbd>mod+n</kbd> | Opens network menu |
+|<kbd>mod+x</kbd> | Opens a powermenu |
+|<kbd>mod+m</kbd> | Opens the music menu |
+|<kbd>mod+i</kbd> | Opens internet menu |
+|<kbd>mod+s</kbd> | Opens screenshoting menu |
+|<kbd>mod+r</kbd> | Runs apps as root |
+|<kbd>mod+w</kbd> | Opens windows menu |
+|<kbd>Print</kbd> | Takes a screenshot |
+|<kbd>mod+Print</kbd> | Takes a screenshot (5s delay) |
+|<kbd>Shift+Print</kbd> | Takes a screenshot (10s delay)|
+|<kbd>Control+Print</kbd> | Takes a screenshot of active window |
+|<kbd>mod+Control+Print</kbd> | Takes a screenshot of an area |
+|<kbd>alt+Control+l</kbd> | Launches the lockscreen |
+|<kbd>mod+p</kbd>| Opens the color picker |
+|<kbd>mod+Control+q</kbd>| Quit dwm |
+|<kbd>mod+Shift+r</kbd>| Reload dwm |
+|<kbd>mod+Shift+equal</kbd>| Increase Border size |
+|<kbd>mod+Shift+minus</kbd>| Decrease Border size |
+|<kbd>mod+Shift+BackSpace</kbd>| Reset borders |
+|<kbd>mod+Shift+BracketLeft</kbd>| Increase gaps |
+|<kbd>mod+Shift+BracketRight</kbd>| Decrease gaps |
+|<kbd>mod+Shift+backslah</kbd>| Reset gaps |
+|<kbd>mod+Shift+g</kbd>| Toggle gaps |
+|<kbd>mod+Shift+i</kbd>| Increase inner gaps |
+|<kbd>mod+Control+Shift+i</kbd>| Decrease inner gaps |
+|<kbd>mod+Shift+o</kbd>| Increase inner gaps |
+|<kbd>mod+Control+Shift+o</kbd>| Decrease inner gaps |
+|<kbd>mod+c</kbd>| Murder a window |
+|<kbd>mod+escape</kbd>| Murder but with xkill |
+|<kbd>mod+j/k(Or Left right arrow)</kbd> | Cycle focus (back and forth |
+|<kbd>mod+shift+j/k(or left right arrow)</kbd>| Switch master and slave |
+|<kbd>mod+i</kbd> | Increase number of master windows |
+|<kbd>mod+u</kbd>| Decrease number of master windows |
+|<kbd>mod+h(or Control+Left)</kbd>| Shrink to the left |
+|<kbd>mod+l(or Control+Right)</kbd>| Shrink to the right |
+|<kbd>mod+b</kbd>| Toggle the bar |
+|<kbd>mod+Tab</kbd>| Switch to master |
+|<kbd>alt+Tab</kbd>| Switch to last tag |
+|<kbd>mod+d</kbd>| Hide window (send it to the shadow realms) |
+|<kbd>mod+Shift+d</kbd>| Restore window (get it back from the shadow realms) |
+|<kbd>mod+0</kbd>| Reset the UI |
+|<kbd>mod+Shift+0</kbd>| Reset the tag layout |
+|<kbd>Alt+Control+Space</kbd>| Open the layout menu |
+|<kbd>Mod+Control+comma/period</kbd>| Cycle through the layouts |
+|<kbd>mod+Shift+Space</kbd>| Toggle floating mode |
+|<kbd>mod+f</kbd>| Toggle fullscreen |
+|<kbd>mod+space</kbd>| Enable tabbed layout |
+|<kbd>mod+t</kbd>| Enable tiled layout |
+|<kbd>mod+g</kbd>| Enable grid layout |
+|<kbd>mod+Shift+m</kbd>| Enable Monocle layout |
+|<kbd>mod+Shift+s</kbd>| Enable Spiral layout |
+|<kbd>mod+Shift+t</kbd>| Enable Stack layout |
+|<kbd>mod+Shift+c</kbd>| Enable Centered Master layout |
+|<kbd>mod+Shift+x</kbd>| Enable Tatami layout |

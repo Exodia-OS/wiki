@@ -83,7 +83,6 @@ function Feature({imgSrc, title, description}) {
     );
 }
 
-HomepageFeatures
 export default function HomepageFeatures() {
     return (
         <section className={styles.features}>

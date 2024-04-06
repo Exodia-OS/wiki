@@ -20,7 +20,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Exodia OS', // Usually your GitHub org/user name.
+  organizationName: 'Exodia-OS', // Usually your GitHub org/user name.
   projectName: 'Exodia OS wiki', // Usually your repo name.
 
   onBrokenLinks: 'throw',

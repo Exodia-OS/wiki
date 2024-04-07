@@ -1,0 +1,62 @@
+---
+slug: 2024.02.24-wireless-release
+title: Wireless Feb 2024 Release
+authors: Ozil
+tags: [2024, release, iso]
+hide_table_of_contents: true
+---
+
+<!-- Badges -->
+export const Highlight = ({children, color}) => (
+    <span
+        style={{
+            backgroundColor: color,
+            borderRadius: '25px',
+            color: '#010D16',
+            padding: '0.2rem 0.4rem',
+        }}>
+    {children}
+  </span>
+);
+
+<Highlight color="#04bdcb">Free Palestine 🇵🇸</Highlight>  <br></br>
+
+<br></br>New Release Of Acer-Predator Edition<br></br>
+
+[exodia-wireless-2024.02.24-x86_64.iso](https://omansh.vercel.app/ExodiaOS/latest/wireless)
+
+> **_Recommend to read_**   **[wiki](https://exodia-os.github.io/wiki/docs/intro)**
+
+## Changelog :-
+
+- updated (regular update)
+- Updated ISO with the latest packages with a new structure
+- Updated `exodia-NvChad`, `PowerShell`, `plymouth`
+- Change `sddm` theme with [**`sddm-theme-corners`**](https://github.com/aczw/sddm-theme-corners)
+-  `F4` open terminal here and `F5` PowerShell in `thunr`.
+- Added new pkg `tgpt`
+- fix grub theme
+- update the `.zshrc` config file and add support for user custom profile, if you want to add your custom profile like Alias, etc.
+- create `.custom-profile` in home dir `~`
+- `~/.custom-profile` , and add your config
+- use `btrfs` as the default filesystem
+- Updated `calamares` config to choose which window manager to use
+- ![desktops](https://github.com/Exodia-OS/exodia-home-ISO/assets/62524855/bdbb36a6-edb7-471e-a6e4-27a247a4e019)
+- Updated `exodia-welcome`
+- replaced `exodia-helper` with `exodia-assistant`
+- Updated `bspwm`  config with a new structure (`exodia-bspwm 8.0-6`)
+- new structure for `exodia-bspwm`, that allows you to create your own theme easily
+- update `rofi` menus
+- update `polybar` themes and Fix `polybar` padding (when changing theme)
+- update `bspwm` themes see more [info here](https://github.com/Exodia-OS/bspwm-themes)
+- add new themes
+- add more `picom` config
+- add `bspmonitors` script to setup all connected external monitors
+- `monitors-layouts = ` in `exodia.conf` file for passing user custom monitors config if you keep it empty exodia will configure the monitors automatically with `bspmonitors`
+- add `exodia.conf` config file for `bspwm` to load background, theme, icons, etc...
+- add a config file for each theme `theme.conf` that is easy to change the background, theme, icons, etc...
+- see more [info here](https://github.com/Exodia-OS/exodia-bspwm/blob/master/changelog.md)
+- Added `exodia-dwm` and `exodia-dwm-predator`
+- Added `exodia-i3wm` and `exodia-i3wm-predator` with multiple themes
+- with the same structure as `exodia-bspwm`, which allows you to create your own theme easily
+

@@ -1,0 +1,34 @@
+---
+id: Keybinding
+title: Keybinding ⌨️ 
+---
+
+<!-- Badges -->
+export const Highlight = ({children, color}) => (
+    <span
+        style={{
+            backgroundColor: color,
+            borderRadius: '25px',
+            color: '#010D16',
+            padding: '0.2rem 0.4rem',
+        }}>
+    {children}
+  </span>
+);
+
+<Highlight color="#04bdcb">Free Palestine 🇵🇸</Highlight>   <br></br><br></br>
+
+Keybinding refers to the practice of assigning keyboard shortcuts to various actions or commands within the window manager environment. These shortcuts allow users to perform tasks such as opening applications, switching between windows, resizing or moving windows, and executing specific commands, all without needing to use the mouse or navigate through menus.
+
+Keybinding is highly customizable and can be tailored to suit individual preferences and workflows. Users typically define keybindings in configuration files specific to their chosen window manager, such as:
+- `~/.config/bspwm/keybinding/sxhkdrc` for `BSPWM`
+- `~/.config/i3/config` for the `I3WM`
+- `/opt/exodia/dwm/config.def.h` For `DWM`
+
+:::note[Note]
+The above paths are for Exodia OS **ONLY**. They might be different for other distros.
+:::
+
+- [**`BSPWM`**](./1-bspwm.mdx)
+- [**`I3WM`**](./2-dwm.mdx)
+- [**`DWM`**](./3-i3wm.mdx)

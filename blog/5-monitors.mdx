@@ -5,6 +5,21 @@ authors: [Ozil]
 tags: [tips]
 ---
 
+<!-- Badges -->
+export const Highlight = ({children, color}) => (
+    <span
+        style={{
+            backgroundColor: color,
+            borderRadius: '25px',
+            color: '#010D16',
+            padding: '0.2rem 0.4rem',
+        }}>
+    {children}
+  </span>
+);
+
+<Highlight color="#04bdcb">Free Palestine 🇵🇸</Highlight>   <br></br><br></br>
+
 :::tip[bspmonitors]
 
 - the `bspmonitors` script will auto-configure all connected monitors

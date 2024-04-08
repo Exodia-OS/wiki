@@ -44,13 +44,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #01a8b4;
-  --ifm-color-primary-dark: #244E6D;
-  --ifm-color-primary-darker: #176DA7;
-  --ifm-color-primary-darkest: #167CC0;
-  --ifm-color-primary-light: #2598DD;
+  --ifm-color-primary: #006a73;
+  --ifm-color-primary-dark: #183449;
+  --ifm-color-primary-darker: #104b73;
+  --ifm-color-primary-darkest: #106095;
+  --ifm-color-primary-light: #1c71a5;
   --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #9FCEE6;
+  --ifm-color-primary-lightest: #799daf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   background: #9FCEE6;
 }

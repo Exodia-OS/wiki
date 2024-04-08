@@ -45,6 +45,8 @@ const config = {
         blogTitle: 'News',
         blogSidebarTitle: 'Latest News',
         blogSidebarCount: 15,
+        editUrl:
+            'https://github.com/Exodia-OS/wiki/tree/master',
       },
     ],
   ],
@@ -80,7 +82,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'Logos/with-bg/exodia-cyan-black-bg.png',
       navbar: {
         style: 'dark',
         // title: '',
@@ -112,7 +114,7 @@ const config = {
       },
       algolia: {
 
-        className: 'algolia-search',
+        themes: ['@docusaurus/theme-search-algolia'],
 
         // The application ID provided by Algolia
         appId: 'SJSCFND0L4',

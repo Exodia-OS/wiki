@@ -1,0 +1,99 @@
+---
+id: boot
+title: Boot to Exodia OS
+sidebar_position: 1
+---
+
+<!-- Tabs -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<!-- Badges -->
+export const Highlight = ({children, color}) => (
+    <span
+        style={{
+            backgroundColor: color,
+            borderRadius: '25px',
+            color: '#010D16',
+            padding: '0.2rem 0.4rem',
+        }}>
+    {children}
+  </span>
+);
+
+<!-- ----- -->
+
+<Highlight color="#04bdcb">Free Palestine 🇵🇸</Highlight>   <br></br><br></br>
+
+<Tabs>
+
+    <!-- Balena Etcher -->
+    <TabItem value="balenaEtcher" label="Balena Etcher" default>
+
+        Download [**`Balena Etcher`**](https://etcher.balena.io)
+
+        - Launch Balena Etcher, Press on **Select Image** and select the Exodia OS ISO Image
+        - Press on **Select target** and Select your USB drive.
+        - Press on **Flash!**
+        - it will will create a bootable USB for both **BIOS and UEFI**.
+
+
+    </TabItem>
+
+    <!-- Ventoy -->
+    <TabItem value="ventoy" label="Ventoy">
+
+        Download [**`Ventoy`**](https://www.ventoy.net/en/download.html)
+
+    </TabItem>
+
+    <!-- dd -->
+    <TabItem value="dd" label="dd">
+
+        you can crate a both `BIOS` and `UEFI` **Bootable** `USB` in Linux using `dd`
+
+        - Open up The Terminal and run this command to list all `USB` Devices
+          - ```bahs
+            sudo fdisk -l
+            ```
+
+          - ```bash
+            Disk /dev/sdc: 28.82 GiB, 30943995904 bytes, 60437492 sectors
+            Disk model: DataTraveler 3.0
+            Units: sectors of 1 * 512 = 512 bytes
+            Sector size (logical/physical): 512 bytes / 512 bytes
+            I/O size (minimum/optimal): 512 bytes / 512 bytes
+            Disklabel type: dos
+            Disk identifier: 0xdc106f98
+
+            Device     Boot    Start      End  Sectors  Size Id Type
+            /dev/sdc1  *        2048 60371951 60369904 28.8G  7 HPFS/NTFS/exFAT
+            /dev/sdc2       60371952 60437487    65536   32M ef EFI (FAT-12/16/32)
+            ```
+        - then Run the below command to burn the ISO on `USB` with path of `ISO` image and the targeted `USB`
+          - ```bash
+            sudo dd bs=4M if=path/to/exodia-os.iso of=/dev/sdX status=progress oflag=sync
+            ```
+          - in my case the `USB` is `/dev/sdc`
+          - and the `ISO` path is loacated at `~/Downloads/iso/exodia-home-2024.02.21-x86_64.iso`
+          - ```bash
+            sudo dd bs=4M if=~/Downloads/iso/exodia-home-2024.02.21-x86_64.iso of=/dev/sdc status=progress oflag=sync
+            ```
+
+    </TabItem>
+
+    <!-- Rufus -->
+    <TabItem value="rufus" label="Rufus">
+
+        Download [**`Rufus`**](https://rufus.ie/en)
+
+    </TabItem>
+
+    <!-- WinSetupFromUSB -->
+    <TabItem value="winsetupfromusb" label="WinSetupFromUSB">
+
+        Download [**`WinSetupFromUSB`**](http://www.winsetupfromusb.com/downloads)
+
+    </TabItem>
+
+</Tabs>

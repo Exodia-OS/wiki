@@ -17,6 +17,18 @@ local dev [**`http://localhost:3000/wiki`**](http://localhost:3000/wiki)
 yarn start
 ```
 
+Build
+
+```bash
+yarn build
+```
+
+Deployment
+
+```bash
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
 Self Deploy To GitHub Pages with GitHub Actions
 
 ## Contributors ✨

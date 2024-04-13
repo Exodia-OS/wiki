@@ -166,3 +166,23 @@
   -webkit-text-fill-color: transparent; /* Make the text transparent */
 
 }
+
+/* ===== Scrollbar ==== */
+
+* {
+  scrollbar-color: #04bdcb;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: .5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--border);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--ifm-color-primary);
+  border-radius: 5px;
+}

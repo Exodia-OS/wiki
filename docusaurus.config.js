@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -26,9 +26,6 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -45,8 +42,7 @@ const config = {
         blogTitle: 'News',
         blogSidebarTitle: 'Latest News',
         blogSidebarCount: 15,
-        editUrl:
-            'https://github.com/Exodia-OS/wiki/tree/master',
+        editUrl: 'https://github.com/Exodia-OS/wiki/tree/master',
       },
     ],
   ],
@@ -58,143 +54,78 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Exodia-OS/wiki/tree/master',
+          editUrl: 'https://github.com/Exodia-OS/wiki/tree/master',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Exodia-OS/wiki/tree/master',
+          editUrl: 'https://github.com/Exodia-OS/wiki/tree/master',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
       }),
     ],
-
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'Logos/with-bg/exodia-cyan-black-bg.png',
-      navbar: {
-        style: 'dark',
-        // title: '',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'Logos/with-bg/exodia-cyan-black-bg.png',
-          href: '/',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Docs',
-            className: 'navbar__text',
-
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+      ({
+        // Replace with your project's social card
+        image: 'Logos/with-bg/exodia-cyan-black-bg.png',
+        navbar: {
+          style: 'dark',
+          logo: {
+            alt: 'My Site Logo',
+            src: 'Logos/with-bg/exodia-cyan-black-bg.png',
+            href: '/',
           },
-          { to: '/blog', label: 'Tips', position: 'left', className: 'navbar__text'},
-          { to: '/news', label: 'News', position: 'left', className: 'navbar__text'},
-
-          {
-            href: 'https://github.com/Exodia-OS/wiki',
-            // label: 'GitHub',
-            className: 'header-github-link',
-            position: 'right',
-          },
-
-        ],
-      },
-      algolia: {
-
-        themes: ['@docusaurus/theme-search-algolia'],
-
-        // The application ID provided by Algolia
-        appId: 'SJSCFND0L4',
-
-        // Public API key: it is safe to commit it
-        apiKey: '53c7014fae1952c4975c42631c12c348',
-
-        indexName: 'exodia_wiki',
-
-        // Optional: see doc section below
-        contextualSearch: true,
-
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
-
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-        replaceSearchResultPathname: {
-          from: '/docs/', // or as RegExp: /\/docs\//
-          to: '/',
+          items: [
+            {
+              type: 'docSidebar',
+              sidebarId: 'tutorialSidebar',
+              position: 'left',
+              label: 'Docs',
+              className: 'navbar__text',
+            },
+            { to: '/blog', label: 'Tips', position: 'left', className: 'navbar__text' },
+            { to: '/news', label: 'News', position: 'left', className: 'navbar__text' },
+            {
+              href: 'https://github.com/Exodia-OS/wiki',
+              className: 'header-github-link',
+              position: 'right',
+            },
+          ],
         },
-
-        // Optional: Algolia search parameters
-        searchParameters: {},
-
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
-
-        //... other Algolia params
-      },
-      footer: {
-        style: 'dark',
-
-        // links: [
-        //   {
-        //     title: 'Docs',
-        //     items: [
-        //       {
-        //         label: 'Tutorial',
-        //         to: '/docs/intro',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       {
-        //         label: 'Stack Overflow',
-        //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //       },
-        //       {
-        //         label: 'Discord',
-        //         href: 'https://discordapp.com/invite/docusaurus',
-        //       },
-        //       {
-        //         label: 'Twitter',
-        //         href: 'https://twitter.com/docusaurus',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'More',
-        //     items: [
-        //       {
-        //         label: 'Blog',
-        //         to: '/blog',
-        //       },
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/facebook/docusaurus',
-        //       },
-        //     ],
-        //   },
-        // ],
-        copyright: `Exodia OS is licensed under the GPl-3 License © ${new Date().getFullYear()} 2024 Exodia OS Development & Cyb3rTh1eveZ Team`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        announcementBar: {
+          id: 'announcementBar', // Increment on change
+          content: `Blessed Leader Yahya Sinwar, May God have mercy on you, our heroic martyr leader. Inshallah`,
+          isCloseable: true,
+          backgroundColor: '#04D3E4',
+          textColor: '#000000',
+        },
+        algolia: {
+          themes: ['@docusaurus/theme-search-algolia'],
+          appId: 'SJSCFND0L4',
+          apiKey: '53c7014fae1952c4975c42631c12c348',
+          indexName: 'exodia_wiki',
+          contextualSearch: true,
+          externalUrlRegex: 'external\\.com|domain\\.com',
+          replaceSearchResultPathname: {
+            from: '/docs/',
+            to: '/',
+          },
+          searchParameters: {},
+          searchPagePath: 'search',
+        },
+        footer: {
+          style: 'dark',
+          copyright: `Exodia OS is licensed under the GPL-3 License © ${new Date().getFullYear()} Exodia OS Development & Cyb3rTh1eveZ Team`,
+        },
+        prism: {
+          theme: prismThemes.github,
+          darkTheme: prismThemes.dracula,
+        },
+      }),
 };
 
 export default config;

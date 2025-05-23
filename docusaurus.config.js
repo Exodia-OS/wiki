@@ -96,13 +96,16 @@ const config = {
             },
           ],
         },
-        announcementBar: {
-          id: 'announcementBar', // Increment on change
-          content: `Blessed Leader Yahya Sinwar, May God have mercy on you, our heroic martyr leader. Inshallah`,
-          isCloseable: true,
-          backgroundColor: '#04D3E4',
-          textColor: '#000000',
-        },
+        // announcementBar: {
+        //   id: 'announcementBar', // Increment on change
+        //   content: `Add your announcement text here`,
+        //   backgroundColor: '#fafbfc',
+        //   textColor: '#091e42',
+        //   isCloseable: false,
+        //   isCloseable: true,
+        //   backgroundColor: '#04D3E4',
+        //   textColor: '#000000',
+        // },
         algolia: {
           themes: ['@docusaurus/theme-search-algolia'],
           appId: 'SJSCFND0L4',
